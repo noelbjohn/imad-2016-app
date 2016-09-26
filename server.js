@@ -84,7 +84,7 @@ app.get('/counter', function (req, res) {
 
 var nemes=[];
 app.get('/submit-name/:name', function (req, res) {
-  var name=req.params.names;
+  var name=req.params.name;
   names.push(name);
   res.send(JSON.stringify(names));
 });
