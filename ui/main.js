@@ -11,6 +11,6 @@ button.onclick=function(){
         }
       }
     };
-    httprequest.open('GET','http://noelbjohn.imad.hasura-app.io',true);
+    httprequest.open('GET','http://noelbjohn.imad.hasura-app.io/counter',true);
     httprequest.send(null);
 };
