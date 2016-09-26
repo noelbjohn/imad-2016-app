@@ -10,7 +10,7 @@ button.onclick=function(){
           span.innerHTML=counter.toString();
         }
       }
-    }
+    };
     httprequest.open('GET','http://noelbjohn.imad.hasura-app.io',true);
     httprequest.send(null);
 };
