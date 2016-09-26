@@ -14,8 +14,7 @@ button.onclick=function(){
     httprequest.open('GET','http://noelbjohn.imad.hasura-app.io/counter',true);
     httprequest.send(null);
 };
-var nameInput=document.getElementById("name");
-var name=nameInput.value;
+
 var submit=document.getElementById("submit_btn");
 submit.onclick=function(){
     var httprequest=new XMLHttpRequest();
@@ -33,6 +32,8 @@ submit.onclick=function(){
         }
       }
     };
-    httprequest.open('GET','http://noelbjohn.imad.hasura-app.io/counter',true);
+    var nameInput=document.getElementById("name");
+    var name=nameInput.value;
+    httprequest.open('GET','http://noelbjohn.imad.hasura-app.io/submit-name?name='+name,true);
     httprequest.send(null);
 };
