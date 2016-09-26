@@ -1,8 +1,8 @@
 var span=document.getElementById("count");
 var button=document.getElementById("counter");
-var httprequest=new XMLHttpRequest();
 var counter=0;
 button.onclick=function(){
+    var httprequest=new XMLHttpRequest();
     httprequest.onreadystatechange=function(){
       if(httprequest.readyState===XMLHttpRequest.DONE){
         if(httprequest.status===200){
