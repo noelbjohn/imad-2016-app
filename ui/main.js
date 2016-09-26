@@ -24,5 +24,5 @@ submit.onclick=function(){
         list+='<li>'+names[i]+'</li>';
     }
     ul=document.getElementById("namelist");
-    ul.innerHTMl=list;
+    ul.innerHTML=list;
 };
