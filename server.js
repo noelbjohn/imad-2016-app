@@ -13,39 +13,6 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
-var articles={
-    'article-one':{
-        title: 'Article One !Noel B John',
-        heading: 'Article One',
-        date: 'Sept 3, 2016',
-        content:`<p>
-                    This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page.This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page.
-                </p>
-                <p>
-                    This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page.This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page.
-                </p>
-                <p>
-                    This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page.This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page. This is the contents of article one. This is a sample page.
-                </p>`
-    },
-    'article-two':{
-        title: 'Article Two !Noel B John',
-        heading: 'Article Two',
-        date: 'Sept 5, 2016',
-        content: `<p>
-                    This is the contents of article two. This is a sample page. This is the contents of article two. This is a sample page. This is the contents of article two. This is a sample page. This is the contents of article two. This is a sample page. This is the contents of article two. This is a sample page. This is the contents of article two. This is a sample page.
-                </p>`
-    },
-    'article-three':{
-        title: 'Article Three !Noel B John',
-        heading: 'Article Three',
-        date: 'Sept 15, 2016',
-        content: `<p>
-                    This is the contents of article three. This is a sample page.
-                </p>`
-    }
-};
-
 function createTemplate(data){
     var title=data.title;
     var heading=data.heading;
